@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- left section start -->
+        <aside id="sidebar">
+
+            <div class="top">
+
+                <div class="logo">
+                    <h2><span class="danger">EXPENSE TRACKER</span>.com</h2>
+                </div>
+
+                <div class="close" id="closeSidebar">
+                    <span class="material-symbols-outlined"> close </span>
+                </div>
+
+            </div>
+            <!-- end top -->
+
+            <div class="sidebar">
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined"> grid_view </span>
+                    <h3>Dashboard</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined"> person_outline </span>
+                    <h3>Customer</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined"> insights </span>
+                    <h3>Analytics</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined"> mail_outline </span>
+                    <h3>Messages</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined"> receipt_long </span>
+                    <h3>Products</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined"> settings </span>
+                    <h3>Settings</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined"> add </span>
+                    <h3>Add Product</h3>
+                </a>
+
+                <a href="#">
+                    <span class="material-symbols-outlined"> logout </span>
+                    <h3>Log Out</h3>
+                </a>
+            </div>
+        
+        </aside>
+        <!-- left section end -->
+
+        <!-- main section start-->
+        <main>
+            <h1>Dashboard</h1>
+
+            <!-- start insights -->
+            <div class="insights">
+
+                <!-- start selling -->
+                <div class="expenses">
+                    <span class="material-symbols-outlined"> local_mall </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>$3000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle r="30" cy="40" cx="40"></circle>
+                            </svg>
+                            <div class="number">80%</div>    
+                        </div>
+                    </div>
+                    <small>Last 24 Hours</small>
+                </div>
+                <!-- end selling -->
+
+                 <!-- start incomes -->
+                <div class="incomes">
+                    <span class="material-symbols-outlined"> stacked_line_chart </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Incomes</h3>
+                            <h1>$4000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle r="30" cy="40" cx="40"></circle>
+                            </svg>
+                            <div class="number">100%</div>    
+                        </div>
+                    </div>
+                    <small>Last 24 Hours</small>
+                </div>
+                <!-- end incomes -->
+            
+            </div>
+            <!-- end insights -->
+
+            <!-- start recent order -->
+            <div class="recent_order">
+                <h1>Recent Expenses</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Payments</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Grocery</td>
+                            <td>$1000</td>
+                            <td>30%avg</td>
+                            <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Medical</td>
+                            <td>$300</td>
+                            <td>9%avg</td>
+                            <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Clothes</td>
+                            <td>$700</td>
+                            <td>21%avg</td>
+                            <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Skincare</td>
+                            <td>$800</td>
+                            <td>24%avg</td>
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- end recent order -->
+
+        </main>
+        <!-- main section end -->
+
+        <!-- right section start -->
+        <div class="right">
+            <div class="top">
+
+                <div class="profile">
+                    <div class="info">
+                        <p><b>Username</b></p>
+                        <p>Admin</p>
+                        <small class="text-muted"></small>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end top -->
+
+            <!-- start recent update -->
+            <div class="recent_updates">
+                <h2>Recent Updates</h2>
+
+                <div class="updates">
+                    <div class="update">
+                        <span class="material-symbols-outlined"> credit_card_clock </span>
+                    </div>
+                    <div class="message">
+                        <p>Spent money on <b>clothes</b> today</p>
+                    </div>
+
+                    <div class="update">
+                        <span class="material-symbols-outlined"> credit_card_clock </span>
+                    </div>
+                    <div class="message">
+                        <p>Spent money on <b>grocery</b> today</p>
+                    </div>
+
+                    <div class="update">
+                        <span class="material-symbols-outlined"> credit_card_clock </span>
+                    </div>
+                    <div class="message">
+                        <p>Spent money on <b>medication</b> yesterday</p>
+                    </div>
+
+                    <div class="update">
+                        <span class="material-symbols-outlined"> credit_card_clock </span>
+                    </div>
+                    <div class="message">
+                        <p>Spent money on <b>skincare</b> yesterday</p>
+                    </div>
+                </div>
+
+            </div>
+            
+        </div>
+        <!-- right section end -->
+    </div>
+    
+    <script>
+        // Sidebar toggle functionality
+        const closeSidebarButton = document.getElementById("closeSidebar");
+        const sidebar = document.getElementById("sidebar");
+
+        closeSidebarButton.addEventListener("click", function() {
+            sidebar.classList.toggle("closed");
+        });
+
+        // You could add other JavaScript logic below if needed, for example, for dynamic updates or handling clicks.
+    </script>
+</body>
+</html>

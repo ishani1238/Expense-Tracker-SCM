@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image" href="logo.png">
+    <title>EXPENSE TRACKER</title>
+</head>
+<body >
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li style="color: rgb(245, 199, 199);font-size:x-large";>EXPENSE TRACKER&nbsp; &nbsp; &nbsp; &nbsp;</li>
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#ADD-expenses">Add Expenses</a></li>
+                <li><a href="#manage-budget">Manage Budgets</a></li>
+                <li><a href="#budget-summary">Budget Summary</a></li>
+        </nav>
+    </header>
+    <main >
+            <div class="containers">  
+            <div class="b1" style="background-color:rgb(252, 210, 244); border-color: rgb(0, 0, 0); padding: 2px;"><CENTER>
+                <section id="dashboard">
+                    <h1>EXPENSES</h1>
+                <table margin="2px">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Category</th>
+                            <th>Amount</th>
+                            <th>Description</th>
+                            <th>Action</th> 
+                        </tr>
+                    </thead>
+                    <tbody id="expense-table-body">
+                    </tbody>
+                </table>
+                <br><br>
+            </div>
+            <br><br>
+            <DIV CLASS="B2" style="background-color:rgb(245, 208, 250); border-color: rgb(0, 0, 0); padding: 2px;"><CENTER>                
+                <section id="ADD-expenses">
+                <CENTER><h1>ADD EXPENSES</h1></CENTER>   
+            <form id="expense-form">
+                <div class="form-group">
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" >
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <input type="text" id="category" >
+                </div>
+                <div class="form-group">
+                    <label for="amount">Amount:</label>
+                    <input type="number" id="amount" >
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <input type="text" id="description" >
+                </div>
+                <CENTER><button type="submit">Add Expense</button></CENTER>
+            </form>
+            </section>
+        </DIV><br><BR>
+            <DIV CLASS="B3" style="background-color:rgb(245, 208, 250); border-color: rgb(0, 0, 0); padding: 2px;">
+        <section id="manage-budget">
+                <CENTER><h1>ADD BUDGETS</h1></CENTER>          
+          <form id="budget-form">
+                <div class="form-group">
+                    <label for="budget-name">Budget Name:</label>
+                    <input type="text" id="budget-name" >
+                </div>
+                <div class="form-group">
+                    <label for="monthly-income">Monthly Income:</label>
+                    <input type="number" id="monthly-income" >
+                </div>
+                <div class="form-group">
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" >
+                </div>
+                <div class="form-group">
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" >
+                </div>
+                <CENTER><button type="submit">Add Budget</button></CENTER></section>
+            </form></DIV>
+            <section id="ADD BUDGETS">
+                <div class="b4" style="background-color:rgb(245, 208, 250); border-color: rgb(0, 0, 0); padding:16px;">
+                    <CENTER><h2>YOUR BUDGETS</h2></CENTER>
+                <table  STYLE="margin:15px;BORDER-COLOR:BLACK; PADDING:15PX">
+                    <thead>
+                        <tr>
+                            <th>Budget Name</th>
+                            <th>Monthly Income</th>
+                            <th>Start Date</th>
+                            <th>End Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="budget-table-body">
+                    </tbody>
+                </table>
+                </div>
+            </section>
+            <section id="budget-summary">
+                    <h1 id="budget-title"></h1>
+                    <div id="budget-info">
+                  <CENTER>  <h1>Budget Categories</h1></CENTER>
+                    <table >
+            <TR>
+                <TH>Category</TH>
+                <TH>Allocation Category</TH>
+            </TR>
+            <TR>
+                <TD bgcolor="white"><label for="Food">
+                    <img src="IMG5.png" width="50" height="50"><b>Food</b></label></TD><br>
+                    
+                <TD><input type="text" id="Food" name="Food" style="width:600px; height:30px;"><br></TD>
+            </TR>
+            <TR>
+                <TD bgcolor="white"><label for="Transpotation"><img src="IMG4.jpg" width ="50" height="50"><b>Transportation</b></label></TD><br>
+                <TD><input type="text" id="Transpotation" name="Transpotation" style="width:600px; height:30px;"></TD>
+                <br>
+            </TR>
+            <TR>
+                <TD bgcolor="white"><label for="Shopping"><img src="IMG1.jpg" width="50" height="50"><b>Shopping</b></TD><br>
+                <TD><input type="text" id="Shopping" name="Shopping" style="width:600px; height:30px;"></TD><br>
+            </TR>
+            <TR>
+                <TD bgcolor="white"><label for="Bills"><img src="IMG2.png"width="70" height="70"><b>Bills</b></label></TD><br>
+                <TD><input type="text" id="Bills" name="Bills" style="width:600px; height:30px;"></TD><br>
+            </TR>
+            <TR>
+                <TD bgcolor="white"><label for="Education"><img src="IMG3.png"width="70" height="70"><b>Education</b></label></TD><br>
+                <TD><input type="text" id="Education" name="Education" style="width:600px; height:30px;"></TD><br>
+            </TR>
+            <TR>
+                <TD bgcolor="white"><label for="Other"><b><b>Other</b></b></label></TD><br>
+                <TD><input type="text" id="Other" name="Other" style="width:600px; height:30px;"></TD><br>
+            </TR>
+        </table>
+          </div>  <BR><BR>
+            <CENTER> <h2><mark><B> TO DELETE ANY OF YOUR EXPENSES  </MARK><A HREF="expense5.html"><button type="submit">DELETE EXPENSE</button>
+        <div class="container3">
+            <h1 style="font-size: 15;">SAVE RESPOSNIBLY AND ACHIEVE GOALS</h1>
+    <br>
+            <div class="goal-section">
+                <div class="goal-form">
+                    <h1>Set a New Goal</h1><br>
+                    <input type="text" id="goalName" placeholder="Goal Name" required>
+                    <select id="goalCategory">
+                        <option value="" disabled selected>Select Category</option>
+                        <option value="vehicle">Vehicle </option>
+                        <option value="electronics">Electronics </option>
+                        <option value="travel">Travel </option>
+                        <option value="furniture">Furniture </option>
+                        <option value="Medical Emergency">Medical Emergency </option>
+                        <option value="Educaton">Education </option>
+                        <option value="Health Care Policy">Health Care Policy</option>
+                    </select>
+                    <input type="number" id="goalAmount" placeholder="Goal Amount" required>
+                    <button onclick="addGoal()">Add Goal</button>
+                </div>
+    <br>
+                <h1>Current Goals</h1>
+                <ul id="goalList"></ul>
+            </div>
+        </section>
+        </div>
+        </CENTER>
+    </MAIN>
+    </body>
+    </html>
