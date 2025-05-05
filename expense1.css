@@ -36,7 +36,7 @@ button{
   background-color: #08290b;
   color: rgb(248, 252, 249);
   font-size: 17px;
-  border-radius: 7%;
+  border-radius: 8%;
   position: absolute;
   overflow: hidden;
 }
