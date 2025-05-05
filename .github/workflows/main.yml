@@ -17,4 +17,5 @@ jobs:
           issue-message: |
             👋 Hi! Thanks for opening your first issue on the **Expense Tracker** project. We’re happy to have you here!
           pr-message: |
-            🎉 Thanks for your first pull request! We appreciate your contribution. A maintainer will review it soon.
+            🎉 Thanks for your first pull request!  
+            We appreciate your contribution. A maintainer will review it soon.
