@@ -225,11 +225,19 @@
     <script>
         // Sidebar toggle functionality
         const closeSidebarButton = document.getElementById("closeSidebar");
-        const sidebar = document.getElementById("sidebar");
+const sidebar = document.getElementById("sidebar");
 
-        closeSidebarButton.addEventListener("click", function() {
-            sidebar.classList.toggle("closed");
-        });
+closeSidebarButton.addEventListener("click", function () {
+    sidebar.classList.toggle("closed");
+
+    // Update button text based on sidebar state
+    if (sidebar.classList.contains("closed")) {
+        closeSidebarButton.textContent = "Open Sidebar";
+    } else {
+        closeSidebarButton.textContent = "Close Sidebar";
+    }
+});
+
 
         // You could add other JavaScript logic below if needed, for example, for dynamic updates or handling clicks.
     </script>
